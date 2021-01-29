@@ -41,22 +41,22 @@ client.on("message", (channel, tags, message,) => {
     }
 
     if (message == "!bot karicigim") {
-		clientsay('videoyun', " lokiAim @" + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ ");
+		clientsay('videoyun', " lokiAim @" + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ");
     return
     }
 
     if (message == "!bot @karicigim") {
-		clientsay('videoyun', " lokiAim @"  + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ ");
+		clientsay('videoyun', " lokiAim @"  + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ");
     return
     }
 
     if (message == "!bot Karicigim") {
-		clientsay('videoyun', " lokiAim @" + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ ");
+		clientsay('videoyun', " lokiAim @" + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ");
     return
     }
 
     if (message == "!bot @Karicigim") {
-		clientsay('videoyun', " lokiAim @" + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ ");
+		clientsay('videoyun', " lokiAim @" + tags["username"] + " Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR ");
     return
     }
 
@@ -72,22 +72,22 @@ client.on("message", (channel, tags, message,) => {
     }
 
     if (message == "!bot @kocacigim") {
-    clientsay('videoyun', "@" + tags["username"] + " Bana Ha ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ PowerUpL voyunEvil PowerUpR");
+    clientsay('videoyun', "@" + tags["username"] + " Bana Ha PowerUpL voyunEvil PowerUpR");
     return
     }
     
     if (message == "!bot kocacigim") {
-    clientsay('videoyun', "@" + tags["username"] + " Bana Ha ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ PowerUpL voyunEvil PowerUpR");
+    clientsay('videoyun', "@" + tags["username"] + " Bana Ha PowerUpL voyunEvil PowerUpR");
     return
     }
 
     if (message == "!bot Kocacigim") {
-    clientsay('videoyun', "@" + tags["username"] + " Bana Ha ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ PowerUpL voyunEvil PowerUpR");
+    clientsay('videoyun', "@" + tags["username"] + " Bana Ha PowerUpL voyunEvil PowerUpR");
     return
     }
     
     if (message == "!bot @Kocacigim") {
-    clientsay('videoyun', "@" + tags["username"] + " Bana Ha ⍜⍀⟟⋔⟒ ⟟⏁⋉⟒ ⟒⋔⍜⊑ PowerUpL voyunEvil PowerUpR");
+    clientsay('videoyun', "@" + tags["username"] + " Bana Ha PowerUpL voyunEvil PowerUpR");
     return
     }
     
