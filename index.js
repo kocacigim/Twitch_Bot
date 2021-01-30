@@ -30,7 +30,11 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
-
+    if (message.startsWith("!cookie @Kocacigim")) {
+        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :cookie: `);
+    return
+    }
+	
     if (message.startsWith("!bot @chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi  ");
