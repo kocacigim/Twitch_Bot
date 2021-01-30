@@ -211,4 +211,4 @@ var cooldown = function (thisArg, fn, timeout) {
         }
     }
 }
-var clientsay = cooldown(client, client.say, 0)
+var clientsay = cooldown(client, client.say, 15000)
