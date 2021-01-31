@@ -25,16 +25,41 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
+    if (message.startsWith("!meat @Kocacigim")) {
+        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :meat_on_bone: `);
+    return
+    }
+
+    if (message.startsWith("!salad @Kocacigim")) {
+        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :green_salad: `);
+    return
+    }
+
     if (message.startsWith("!pizza @Kocacigim ")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :pizza:`);
     return
     }
 
-    if (message.startsWith("!cookie @Kocacigim")) {
-        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :cookie: `);
+    if (message.startsWith("!popcorn @Kocacigim ")) {
+        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy nymnCorn`);
     return
     }
-	
+
+    if (message.startsWith("!juice @Kocacigim ")) {
+        clientsay('videoyun', "@" + tags["username"] + ` voyunSip tşkrlr`);
+    return
+    }
+
+    if (message.startsWith("!burrito @Kocacigim ")) {
+        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :burrito:`);
+    return
+    }
+
+    if (message.startsWith("!pie @Kocacigim ")) {
+        clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :pie:`);
+    return
+    }
+
     if (message.startsWith("!bot @chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi  ");
@@ -211,4 +236,4 @@ var cooldown = function (thisArg, fn, timeout) {
         }
     }
 }
-var clientsay = cooldown(client, client.say, 15000)
+var clientsay = cooldown(client, client.say, 0)
