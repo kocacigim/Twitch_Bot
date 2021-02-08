@@ -83,6 +83,24 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
+
+    if (message.startsWith("!bot @chat")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
+    return
+    }
+
+    if (message.startsWith("!bot @videoyun_bot")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', " Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS " + "@" + tags["username"] );
+    return
+    }
+
+    if (message.startsWith("!bot videoyun_bot")) {
+        clientsay('videoyun', `Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS ` + "@" + tags["username"] );
+    return
+    }
+
     if (message.startsWith("!bot @videoyun")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
@@ -107,23 +125,7 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 	
-    if (message.startsWith("!bot @chat")) {
-	    const randomemote = randomemotes();
-        clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
-    return
-    }
-
-    if (message.startsWith("!bot @videoyun_bot")) {
-	    const randomemote = randomemotes();
-        clientsay('videoyun', " Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS " + "@" + tags["username"] );
-    return
-    }
-
-    if (message.startsWith("!bot videoyun_bot")) {
-        clientsay('videoyun', `Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS ` + "@" + tags["username"] );
-    return
-    }
-
+	
     if (message.startsWith("!bot Kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL voyunEvil PowerUpR Bana ha! ` + "@" + tags["username"] );
