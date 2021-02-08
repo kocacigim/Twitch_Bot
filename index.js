@@ -40,27 +40,27 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
-    if (message.startsWith("!pizza @Kocacigim ")) {
+    if (message.startsWith("!pizza @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :pizza:`);
     return
     }
 
-    if (message.startsWith("!popcorn @Kocacigim ")) {
+    if (message.startsWith("!popcorn @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy nymnCorn`);
     return
     }
 
-    if (message.startsWith("!juice @Kocacigim ")) {
+    if (message.startsWith("!juice @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` voyunSip tşkrlr`);
     return
     }
 
-    if (message.startsWith("!burrito @Kocacigim ")) {
+    if (message.startsWith("!burrito @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :burrito:`);
     return
     }
 
-    if (message.startsWith("!pie @Kocacigim ")) {
+    if (message.startsWith("!pie @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :pie:`);
     return
     }
