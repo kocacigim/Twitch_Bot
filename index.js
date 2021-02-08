@@ -20,8 +20,9 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
-    if (message.startsWith("!bttv")) {
-        clientsay('videoyun', "@" ${tags.username} + ` Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. `);  }, 1000);
+    if (message.startsWith("!bttv @")) {
+      var input = message.split(' ')[1];
+         clientSay('videoyun', "@"+input + ` Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol.` ); 1500
     return
     }
 	
