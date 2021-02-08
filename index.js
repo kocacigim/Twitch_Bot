@@ -89,6 +89,24 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 	
+    if (message.startsWith("!bot videoyun")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Lokinin hizmetçisini sal ");
+    return
+    }
+	
+    if (message.startsWith("!bot Videoyun")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Lokinin hizmetçisini sal ");
+    return
+    }
+	
+    if (message.startsWith("!bot @Videoyun")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Lokinin hizmetçisini sal ");
+    return
+    }
+	
     if (message.startsWith("!bot @chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
