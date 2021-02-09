@@ -268,4 +268,4 @@ var cooldown = function (thisArg, fn, timeout) {
         }
     }
 }
-var clientsay = cooldown(client, client.say, 15000)
+var clientsay = cooldown(client, client.say, 17000)
