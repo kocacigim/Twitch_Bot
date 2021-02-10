@@ -90,7 +90,7 @@ client.on("message", (channel, tags, message,) => {
     }
 
 
-    if (message.startsWith("!bot @chat")) {
+    if (message.startsWith("!bot Chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
     return
