@@ -16,13 +16,18 @@ client.connect();
 client.on("message", (channel, tags, message,) => {
 
     if (message == "!bot") {
-		clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
+	clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
     return
     }
-
-    if (message.startsWith("!bttv")) {
+	
+    if (message == "!bttv{
+	clientsay('videoyun', "@" + tags["username"] + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. ");
+    return
+    }
+	
+    if (message.startsWith("!bttv @")) {
       var input = message.split(' ')[1];
-       setTimeout(() =>   { clientsay('videoyun',  input + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol." ); }, 1500);
+         clientSay('videoyun', input + ` Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol.` ); 1500
     return
     }
 	
@@ -208,6 +213,78 @@ client.on("message", (channel, tags, message,) => {
     if (message.startsWith("!bot @karicigim ")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "lokiAim @" + tags["username"] + `Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
+    return
+    }
+
+    if (message.startsWith("!bot loki")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+    return
+    }
+
+    if (message.startsWith("!bot @loki")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+    return
+    }
+
+    if (message.startsWith("!bot @Loki")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+    return
+    }
+
+    if (message.startsWith("!bot Loki")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+    return
+    }
+
+    if (message.startsWith("!bot Suwsum")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+    return
+    }
+
+    if (message.startsWith("!bot @Suwsum")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+    return
+    }
+
+    if (message.startsWith("!bot suwsum")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+    return
+    }
+
+    if (message.startsWith("!bot @suwsum")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+    return
+    }
+
+    if (message.startsWith("!bot ninsu")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+    return
+    }
+
+    if (message.startsWith("!bot Ninsu")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+    return
+    }
+
+    if (message.startsWith("!bot @Ninsu")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+    return
+    }
+
+    if (message.startsWith("!bot @ninsu")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
     return
     }
 
