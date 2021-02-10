@@ -31,6 +31,16 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 	
+    if (message.startsWith("!coffee @Kronos_EaglePaw")) {
+        clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee:  `);
+    return
+    }
+	
+    if (message.startsWith("!coffee @kronos_eaglepaw")) {
+        clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee: `);
+    return
+    }
+	
     if (message.startsWith("!coffee @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :coffee: `);
     return
