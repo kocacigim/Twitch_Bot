@@ -32,12 +32,14 @@ client.on("message", (channel, tags, message,) => {
     }
 	
     if (message.startsWith("!coffee @Kronos_EaglePaw")) {
-        clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee:  `);
+	    var input = message.split(' ')[1];
+        clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee: +input `);
     return
     }
 	
     if (message.startsWith("!coffee @kronos_eaglepaw")) {
-        clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee: `);
+	    var input = message.split(' ')[1];
+        clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee: +input `);
     return
     }
 	
