@@ -358,8 +358,8 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 	
-    if (message == "!botkocacigim"){
-	setTimeout(() =>  client.say('videoyun', " Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH"); }, 1200);
+    if (message.startsWith("!botkocacigim")) {
+      setTimeout(() => { clientsay('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
     return
     }
 	
