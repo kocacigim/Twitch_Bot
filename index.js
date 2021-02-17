@@ -210,25 +210,25 @@ client.on("message", (channel, tags, message,) => {
 	
     if (message.startsWith("!bot Kocacigim")) {
 	    const randomemote = randomemotes();
-        clientsay('videoyun', `PowerUpL voyunEvil PowerUpR Bana ha! ` + "@" + tags["username"] );
+        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"] );
     return
     }
     
     if (message.startsWith("!bot @Kocacigim")) {
 	    const randomemote = randomemotes();
-        clientsay('videoyun', `PowerUpL voyunEvil PowerUpR Bana ha! ` + "@" + tags["username"]);
+        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
     return
     }
 
     if (message.startsWith("!bot kocacigim")) {
 	    const randomemote = randomemotes();
-        clientsay('videoyun', `PowerUpL voyunEvil PowerUpR Bana ha! ` + "@" + tags["username"]);
+        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
     return
     }
     
     if (message.startsWith("!bot @kocacigim")) {
 	    const randomemote = randomemotes();
-        clientsay('videoyun', `PowerUpL voyunEvil PowerUpR Bana ha! ` + "@" + tags["username"]);
+        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
     return
     }
     
