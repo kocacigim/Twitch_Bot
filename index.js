@@ -129,6 +129,30 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
+    if (message.startsWith("!bot @tengigabit")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+    return
+    }
+	
+    if (message.startsWith("!bot tengigabit")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+    return
+    }
+	
+    if (message.startsWith("!bot TenGigabit")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+    return
+    }
+	
+    if (message.startsWith("!bot @TenGigabit")) {
+	    const randomemote = randomemotes();
+        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+    return
+    }
+	
     if (message.startsWith("!bot chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
