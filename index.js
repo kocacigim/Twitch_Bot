@@ -1,4 +1,6 @@
 const tmi = require('tmi.js');
+
+let sayi = 0
 const client = new tmi.Client({
 	options: { debug: true },
 	connection: {
@@ -211,24 +213,28 @@ client.on("message", (channel, tags, message,) => {
     if (message.startsWith("!bot Kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"] );
+	    sayi = sayi + 1
     return
     }
     
     if (message.startsWith("!bot @Kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
+	    sayi = sayi + 1
     return
     }
 
     if (message.startsWith("!bot kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
+	    sayi = sayi + 1
     return
     }
     
     if (message.startsWith("!bot @kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
+	    sayi = sayi + 1
     return
     }
     
@@ -351,7 +357,12 @@ client.on("message", (channel, tags, message,) => {
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
     return
     }
-
+	
+    if (message == "!botkocacigim"){
+	  client.say('kocacigim', " Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH " );
+    return
+    }
+	
     if (message.startsWith("!bot @Ninsu")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
