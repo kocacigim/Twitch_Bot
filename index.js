@@ -359,7 +359,7 @@ client.on("message", (channel, tags, message,) => {
     }
 	
     if (message == "!botkocacigim"){
-	  client.say('kocacigim', " Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH " );
+	setTimeout(() =>  client.say('kocacigim', " Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH " ); }, 1200);
     return
     }
 	
