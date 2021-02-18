@@ -1,6 +1,9 @@
 const tmi = require('tmi.js');
 
 let sayi = 0
+
+let fakayu = 0
+
 const client = new tmi.Client({
 	options: { debug: true },
 	connection: {
@@ -21,30 +24,30 @@ client.on("message", (channel, tags, message,) => {
 	clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
     return
     }
-	
+
     if (message == "!bttv"){
 	clientsay('videoyun', "@" + tags["username"] + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. ");
     return
     }
-	
+
     if (message.startsWith("!bttv @")) {
       var input = message.split(' ')[1];
       setTimeout(() => { clientsay('videoyun', input+" Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol."); }, 1200);
     return
     }
-	
+
     if (message.startsWith("!coffee @Kronos_EaglePaw")) {
 	    var input = message.split(' ')[1];
         clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee:  `+input );
     return
     }
-	
+
     if (message.startsWith("!coffee @kronos_eaglepaw")) {
 	    var input = message.split(' ')[1];
         clientsay('videoyun', "@" + tags["username"] + ` Hop YOINK  PepeLaugh  :coffee: `+input);
     return
     }
-	
+
     if (message.startsWith("!coffee @Kocacigim")) {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :coffee: `);
     return
@@ -124,46 +127,53 @@ client.on("message", (channel, tags, message,) => {
         clientsay('videoyun', "@" + tags["username"] + ` peepoHappy :pie:`);
     return
     }
-	
+
     if (message.startsWith("!bot @chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi  ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @tengigabit")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot tengigabit")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot TenGigabit")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot @TenGigabit")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @Chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
+				fakayu = fakayu + 1
     return
     }
 
@@ -171,55 +181,64 @@ client.on("message", (channel, tags, message,) => {
     if (message.startsWith("!bot Chat")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @videoyun_bot")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', " Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS " + "@" + tags["username"] );
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot videoyun_bot")) {
         clientsay('videoyun', `Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS ` + "@" + tags["username"] );
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @videoyun")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot videoyun")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot Videoyun")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
+				fakayu = fakayu + 1
     return
     }
-	
+
     if (message.startsWith("!bot @Videoyun")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
+				fakayu = fakayu + 1
     return
     }
-	
-	
+
+
     if (message.startsWith("!bot Kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"] );
+				fakayu = fakayu + 1
 	    sayi = sayi + 1
     return
     }
-    
+
     if (message.startsWith("!bot @Kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
 	    sayi = sayi + 1
     return
     }
@@ -227,157 +246,189 @@ client.on("message", (channel, tags, message,) => {
     if (message.startsWith("!bot kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
 	    sayi = sayi + 1
     return
     }
-    
+
     if (message.startsWith("!bot @kocacigim")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
 	    sayi = sayi + 1
     return
     }
-    
+
     if (message.startsWith("!bot @begmdy")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot begmdy")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot BegMDY")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
    if (message.startsWith("!bot @BegMDY")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @kronos_eaglepaw")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot Kronos_EaglePaw")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @Kronos_EaglePaw")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
-    
+
     if (message.startsWith("!bot kronos_eaglepaw")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot karicigim ")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun',  "lokiAim @" + tags["username"] + `Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @karicigim ")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "lokiAim @" + tags["username"] + `Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot loki")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @loki")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @Loki")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot Loki")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot Suwsum")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @Suwsum")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot suwsum")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @suwsum")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot ninsu")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot Ninsu")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+				fakayu = fakayu + 1
     return
     }
-	
-    if (message.startsWith("!botkocacigim")) {
-      setTimeout(() => { clientsay('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
-    return
-    }
-	
+
+
+
     if (message.startsWith("!bot @Ninsu")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+				fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot @ninsu")) {
 	    const randomemote = randomemotes();
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
+				fakayu = fakayu + 1
+    return
+    }
+
+		if (message.startsWith("!botatmayinbana")) {
+      setTimeout(() => { clientsay('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
+    return
+    }
+
+		if (message.startsWith("!kacfakayu")) {
+      setTimeout(() => { clientsay('videoyun', "Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG "); }, 1200);
     return
     }
 
 	if (message.startsWith("!bot")) {
 		const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL ${randomemote} SirSword İnsanlara Faka Yu deme! ` + "@" + tags["username"]);
+				fakayu = fakayu + 1
     return
     }
 
