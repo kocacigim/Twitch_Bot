@@ -415,72 +415,56 @@ client.on("message", (channel, tags, message,) => {
     return
     }
 
-		if (message.startsWith("!botatmayinbana")) {
-      setTimeout(() => { clientsay('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
-    return
-    }
+		if (message.startsWith("!botkocacigim")) {
+			if (user["display-name"] === "Kocacigim") {
+				setTimeout(() => { clientsay('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
+		}
 
 		if (message.startsWith("!kacfakayu")) {
-      setTimeout(() => { clientsay('videoyun', "Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG "); }, 1200);
-    return
-    }
+			if (user["display-name"] === "Kocacigim") {
+				setTimeout(() => { clientsay('videoyun', "Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG "); }, 1200);
+		}
 
-	if (message.startsWith("!bot")) {
+  	if (message.startsWith("!bot")) {
 		const randomemote = randomemotes();
         clientsay('videoyun', `PowerUpL ${randomemote} SirSword İnsanlara Faka Yu deme! ` + "@" + tags["username"]);
 				fakayu = fakayu + 1
     return
     }
 
-    function randomemotes() {
+		function randomemotes() {
     const sides = 5;
     const result = Math.floor(Math.random() * sides) + 1;
 
     switch (result) {
         case 1:
-            return 'peepoHappy';
+            return 'peepoMad';
             break
         case 2:
             return 'PeepoWeird';
             break
         case 3:
-            return 'peepoSad';
-            break
-        case 4:
             return 'peepoSip';
             break
-        case 5:
-            return 'peepoMad';
+        case 4:
+            return 'voyunRage';
             break
         default:
             return result;
     }
 }
 });
-// thisArg - context in which to call the function; 'this' in the function's body
-// fn - function to execute on a cooldown
-// timeout - number of milliseconds to wait before allowing fn to be called again
+
 var cooldown = function (thisArg, fn, timeout) {
     var onCooldown = false;
-
-    // return a function that can be called the same way as the wrapped function
     return function (/* args */) {
-
-        // only call the original function if it is not on cooldown
         if (!onCooldown) {
-
-            // not on cooldown, so call the function with the correct context
-            // and the arguments with which this wrapper was called
             fn.apply(thisArg, arguments);
-
-            // set the cooldown flag so subsequent calls will not execute the function
             onCooldown = true;
-
-            // wait <timeout> milliseconds before allowing the function to be called again
             setTimeout(function () {
                 onCooldown = false;
             }, timeout);
-        }
+					}
     }
 }
 var clientsay = cooldown(client, client.say, 17000)
