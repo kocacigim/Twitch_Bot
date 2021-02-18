@@ -24,6 +24,8 @@ client.connect();
 
 client.on("message", (channel, tags, message, user,) => {
 
+//botlar
+
     if (message == "!bot") {
        	clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
     return
@@ -293,7 +295,7 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
-																										//sayaçlar
+//sayaçlar
 
 		if (message.startsWith("monkaW")) {
 				monkaw = monkaw + 1
@@ -329,45 +331,125 @@ client.on("message", (channel, tags, message, user,) => {
 				cock = cock + 1
     return
     }
-																											//ısmarlama
+
+		//ısmarlama pleb
+
+		if (message.startsWith("!coffee @Kocacigim")) {
+ 			let isSub = false;
+  		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!coffee @kocacigim")) {
+ 			let isSub = false;
+  		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!meat @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!meat @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!salad @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!salad @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pizza @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pizza @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!popcorn @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!popcorn @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!juice @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!juice @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!burrito @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!burrito @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pie @Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pie @kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+//ısmarlama
 
 		if (message.startsWith("!coffee @Kocacigim")) {
         client.say('videoyun', ` peepoHappy :coffee: ` +tags["username"]+ " teşekkür ederim. peepoKiss");
-    return
-    }
-
-    if (message.startsWith("!meat @Kocacigim")) {
-        client.say('videoyun',` peepoHappy :meat_on_bone: ` +tags["username"]+ " teşekkür ederim. peepoKiss");
-    return
-    }
-
-    if (message.startsWith("!salad @Kocacigim")) {
-        client.say('videoyun',` peepoHappy :green_salad: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!pizza @Kocacigim")) {
-        client.say('videoyun', ` peepoHappy :pizza: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!popcorn @Kocacigim")) {
-        client.say('videoyun', ` peepoHappy nymnCorn ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!juice @Kocacigim")) {
-        client.say('videoyun', ` voyunSip ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!burrito @Kocacigim")) {
-        client.say('videoyun',` peepoHappy :burrito: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!pie @Kocacigim")) {
-        client.say('videoyun', ` peepoHappy :pie: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
@@ -376,45 +458,81 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
-    if (message.startsWith("!meat @kocacigim")) {
-        client.say('videoyun', ` peepoHappy :meat_on_bone: ` +tags["username"]+ " teşekkür ederim. peepoKiss " );
+    if (message.startsWith("!meat @Kocacigim")) {
+        client.say('videoyun',` peepoHappy :meat_on_bone: ` +tags["username"]+ " teşekkür ederim. peepoKiss");
     return
     }
 
-    if (message.startsWith("!salad @kocacigim")) {
+		if (message.startsWith("!meat @kocacigim")) {
+        client.say('videoyun', ` peepoHappy :meat_on_bone: ` +tags["username"]+ " teşekkür ederim. peepoKiss " );
+    return
+    }
+		
+    if (message.startsWith("!salad @Kocacigim")) {
+        client.say('videoyun',` peepoHappy :green_salad: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
+    return
+    }
+
+		if (message.startsWith("!salad @kocacigim")) {
         client.say('videoyun',` peepoHappy :green_salad: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-    if (message.startsWith("!pizza @kocacigim")) {
+    if (message.startsWith("!pizza @Kocacigim")) {
+        client.say('videoyun', ` peepoHappy :pizza: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
+    return
+    }
+
+		if (message.startsWith("!pizza @kocacigim")) {
         client.say('videoyun',"peepoHappy :pizza:" +tags["username"]+ " teşekkür ederim. peepoKiss " );
     return
     }
 
-    if (message.startsWith("!popcorn @kocacigim")) {
+    if (message.startsWith("!popcorn @Kocacigim")) {
+        client.say('videoyun', ` peepoHappy nymnCorn ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
+    return
+    }
+
+		if (message.startsWith("!popcorn @kocacigim")) {
         client.say('videoyun'," peepoHappy nymnCorn "+tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-    if (message.startsWith("!juice @kocacigim")) {
+
+    if (message.startsWith("!juice @Kocacigim")) {
+        client.say('videoyun', ` voyunSip ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
+    return
+    }
+
+		if (message.startsWith("!juice @kocacigim")) {
         client.say('videoyun',"voyunSip " +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-    if (message.startsWith("!burrito @kocacigim")) {
+    if (message.startsWith("!burrito @Kocacigim")) {
+        client.say('videoyun',` peepoHappy :burrito: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
+    return
+    }
+
+		if (message.startsWith("!burrito @kocacigim")) {
         client.say('videoyun'," peepoHappy :burrito: "+tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-    if (message.startsWith("!pie @kocacigim")) {
+    if (message.startsWith("!pie @Kocacigim")) {
+        client.say('videoyun', ` peepoHappy :pie: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
+    return
+    }
+
+		if (message.startsWith("!pie @kocacigim")) {
         client.say('videoyun'," peepoHappy :pie:" +tags["username"]+ " teşekkür ederim. peepoKiss");
     return
     }
 
-																									//yetki
+//yetki
 
 		if (tags.username !== "kocacigim") return;
-					if (message.startsWith("!banafakayu"))
+			if (message.startsWith("!banafakayu"))
 			setTimeout(() => { client.say('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
 
 			else if (message.startsWith("!fakayu"))
@@ -458,6 +576,8 @@ client.on("message", (channel, tags, message, user,) => {
 }
 });
 
+
+//timeout
 var cooldown = function (thisArg, fn, timeout) {
     var onCooldown = false;
     return function (/* args */) {
@@ -472,3 +592,7 @@ var cooldown = function (thisArg, fn, timeout) {
 }
 var clientsay = cooldown(client, client.say, 17000)
 var clientSay = cooldown(client, client.say, 0)
+
+// sub check
+// let isSub = false;
+// if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
