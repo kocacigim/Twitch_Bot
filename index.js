@@ -446,6 +446,118 @@ client.on("message", (channel, tags, message, user,) => {
 		return
 		}
 
+	
+			if (message.startsWith("!coffee Kocacigim")) {
+ 			let isSub = false;
+  		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!coffee kocacigim")) {
+ 			let isSub = false;
+  		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!meat Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!meat kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!salad Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!salad kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pizza Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pizza kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!popcorn Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!popcorn kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!juice Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!juice kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!burrito Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!burrito kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pie Kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
+
+		if (message.startsWith("!pie kocacigim")) {
+			let isSub = false;
+			if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+		return
+		}
 //ısmarlama
 
 		if (message.startsWith("!coffee @Kocacigim")) {
