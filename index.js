@@ -7,6 +7,8 @@ let monkas = 0
 let monkax = 0
 let peepos = 0
 let cock = 0
+let sadge = 0
+let happy = 0
 
 const client = new tmi.Client({
 	options: { debug: true },
@@ -332,118 +334,111 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
+		if (message.startsWith("Sadge")) {
+				sadge = sadge + 1
+    return
+    }
+
+		if (message.startsWith("peepoHappy")) {
+				happy = happy + 1
+    return
+    }
 		//ısmarlama pleb
 		let isSub = false;
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!coffee @Kocacigim")) {
     if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!coffee @kocacigim")) {
     if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
   	if (message.startsWith("!meat @Kocacigim")) {
     if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!meat @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!salad @Kocacigim")) {
     if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!salad @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!pizza @Kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!pizza @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!popcorn @Kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!popcorn @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!juice @Kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!juice @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!burrito @Kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!burrito @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!pie @Kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!pie @kocacigim")) {
 		if (!isSub)
 				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		return
 		}
 
 //ısmarlama
@@ -535,23 +530,8 @@ client.on("message", (channel, tags, message, user,) => {
 			if (message.startsWith("!banafakayu"))
 			setTimeout(() => { client.say('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
 
-			else if (message.startsWith("!fakayu"))
-			setTimeout(() => { client.say('videoyun', "Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG "); }, 1200);
-
-			else if (message.startsWith("!monkaw"))
-			setTimeout(() => { client.say('videoyun', "monkaW sayacı " +monkaw); }, 1200);
-
-			else if (message.startsWith("!monkas"))
-			setTimeout(() => { client.say('videoyun', "monkaS sayacı " +monkas); }, 1200);
-
-			else if (message.startsWith("!monkax"))
-			setTimeout(() => { client.say('videoyun', "monkaX sayacı " +monkax ); }, 1200);
-
-			else if (message.startsWith("!peepos"))
-			setTimeout(() => { client.say('videoyun', "peepoS sayacı " +peepos); }, 1200)
-
-			else if (message.startsWith("!cock"))
-			setTimeout(() => { client.say('videoyun', "YEP Cock sayacı " +cock); }, 1200)
+			else if (message.startsWith("!datalar"))
+			setTimeout(() => { client.say('videoyun', "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG " + " monkaW sayacı: " +monkaw + " monkaS sayacı: " +monkas+ "  monkaX sayacı: " +monkax+ "  ⠀⠀ peepoS sayacı: " +peepos+ " Sadge sayacı: " +sadge+ " peepoHappy sayacı: " +happy+"⠀⠀ YEP Cock sayacı: " +cock ); }, 1200);
 
 		function randomemotes() {
 		const sides = 4;
