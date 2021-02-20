@@ -9,6 +9,7 @@ let peepos = 0
 let cock = 0
 let sadge = 0
 let happy = 0
+let didsome = 0
 
 const client = new tmi.Client({
 	options: { debug: true },
@@ -343,6 +344,12 @@ client.on("message", (channel, tags, message, user,) => {
 				happy = happy + 1
     return
     }
+
+		if (message.startsWith("DIDSOMEONESAYCOCK")) {
+				didsome = didsome + 1
+    return
+    }
+
 		//ısmarlama pleb
 		let isSub = false;
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
@@ -531,7 +538,7 @@ client.on("message", (channel, tags, message, user,) => {
 			setTimeout(() => { client.say('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
 
 			else if (message.startsWith("!datalar"))
-			setTimeout(() => { client.say('videoyun', "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG " + " monkaW sayacı: " +monkaw + " monkaS sayacı: " +monkas+ "  monkaX sayacı: " +monkax+ "  ⠀⠀ peepoS sayacı: " +peepos+ " Sadge sayacı: " +sadge+ " peepoHappy sayacı: " +happy+"⠀⠀ YEP Cock sayacı: " +cock ); }, 1200);
+			setTimeout(() => { client.say('videoyun', "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG " + " monkaW sayacı: " +monkaw + " monkaS sayacı: " +monkas+ "  monkaX sayacı: " +monkax+ "  ⠀⠀ peepoS sayacı: " +peepos+ " Sadge sayacı: " +sadge+ " peepoHappy sayacı: " +happy+"⠀ DIDSOMEONESAYCOCK sayacı: " +didsome+ " YEP Cock sayacı: " +cock ); }, 1200);
 
 		function randomemotes() {
 		const sides = 4;
