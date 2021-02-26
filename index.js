@@ -10,6 +10,9 @@ let cock = 0
 let sadge = 0
 let happy = 0
 let didsome = 0
+let wha = 0
+
+
 
 const client = new tmi.Client({
 	options: { debug: true },
@@ -19,7 +22,7 @@ const client = new tmi.Client({
 	},
 	identity: {
 		username: "kocacigim",
-		password: "oauth:2jrzvval5912aq64ikbcrcl1k91hqv"
+		password: "yooo ne tokeni ya"
 	},
 	channels: ["videoyun"]
 });
@@ -33,6 +36,11 @@ client.on("message", (channel, tags, message, user,) => {
        	clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
     return
     }
+
+		if (message.startsWith("!bot " + tags["display-name"] )){
+			client.say('kocacigim', "Niye kendine Faka Yu diyorsun? Sadge peepoHug " +tags["username"])
+			return
+		}
 
     if (message == "!bttv"){
       	clientsay('videoyun', "@" + tags["username"] + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. ");
@@ -540,6 +548,31 @@ client.on("message", (channel, tags, message, user,) => {
 			else if (message.startsWith("!datalar"))
 			setTimeout(() => { client.say('videoyun', "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG " + " monkaW sayacı: " +monkaw + " monkaS sayacı: " +monkas+ "  monkaX sayacı: " +monkax+ "  ⠀⠀ peepoS sayacı: " +peepos+ " Sadge sayacı: " +sadge+ " peepoHappy sayacı: " +happy+"⠀ DIDSOMEONESAYCOCK sayacı: " +didsome+ " YEP Cock sayacı: " +cock ); }, 1200);
 
+
+
+
+  //piçlik gang
+
+  if (message("voyun1 voyun2")) {
+    clientsay100('videoyun', "voyun1 voyu2 ");
+    return
+    }
+
+    if (message("voyun1 voyun2 voyunMEGA voyun1 voyun2")) {
+      clientsay100('videoyun', "voyun1 voyun2 voyunMEGA voyun1 voyun2");
+      return
+      }
+
+      if (message("voyun1 voyun2 voyun1 voyun2")) {
+        clientsay100('videoyun', "voyun1 voyun2 voyun1 voyun2");
+        return
+        }
+
+        if (message("voyun1 voyun1 voyun2 voyun2")) {
+          clientsay100('videoyun', "voyun1 voyun1 voyun2 voyun2");
+          return
+          }
+
 		function randomemotes() {
 		const sides = 4;
 		const result = Math.floor(Math.random() * sides) + 1;
@@ -578,7 +611,7 @@ var cooldown = function (thisArg, fn, timeout) {
     }
 }
 var clientsay = cooldown(client, client.say, 17000)
-var clientSay = cooldown(client, client.say, 0)
+var clientsay100 = cooldown(client, client.say, 100000)
 
 // sub check
 // let isSub = false;
