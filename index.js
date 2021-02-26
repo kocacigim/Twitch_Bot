@@ -22,7 +22,7 @@ const client = new tmi.Client({
 	},
 	identity: {
 		username: "kocacigim",
-		password: "yooo ne tokeni ya"
+		password: "oauth:2jrzvval5912aq64ikbcrcl1k91hqv"
 	},
 	channels: ["videoyun"]
 });
@@ -38,7 +38,12 @@ client.on("message", (channel, tags, message, user,) => {
     }
 
 		if (message.startsWith("!bot " + tags["display-name"] )){
-			client.say('kocacigim', "Niye kendine Faka Yu diyorsun? Sadge peepoHug " +tags["username"])
+			clientsay('videoyun', "Niye kendine Faka Yu diyorsun? Sadge peepoHug " +tags["username"])
+			return
+		}
+
+		if (message.startsWith("!bot @" + tags["display-name"] )){
+			clientsay('videoyun', "Niye kendine Faka Yu diyorsun? Sadge peepoHug " +tags["username"])
 			return
 		}
 
@@ -549,30 +554,6 @@ client.on("message", (channel, tags, message, user,) => {
 			setTimeout(() => { client.say('videoyun', "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG " + " monkaW sayacı: " +monkaw + " monkaS sayacı: " +monkas+ "  monkaX sayacı: " +monkax+ "  ⠀⠀ peepoS sayacı: " +peepos+ " Sadge sayacı: " +sadge+ " peepoHappy sayacı: " +happy+"⠀ DIDSOMEONESAYCOCK sayacı: " +didsome+ " YEP Cock sayacı: " +cock ); }, 1200);
 
 
-
-
-  //piçlik gang
-
-  if (message("voyun1 voyun2")) {
-    clientsay100('videoyun', "voyun1 voyu2 ");
-    return
-    }
-
-    if (message("voyun1 voyun2 voyunMEGA voyun1 voyun2")) {
-      clientsay100('videoyun', "voyun1 voyun2 voyunMEGA voyun1 voyun2");
-      return
-      }
-
-      if (message("voyun1 voyun2 voyun1 voyun2")) {
-        clientsay100('videoyun', "voyun1 voyun2 voyun1 voyun2");
-        return
-        }
-
-        if (message("voyun1 voyun1 voyun2 voyun2")) {
-          clientsay100('videoyun', "voyun1 voyun1 voyun2 voyun2");
-          return
-          }
-
 		function randomemotes() {
 		const sides = 4;
 		const result = Math.floor(Math.random() * sides) + 1;
@@ -611,7 +592,30 @@ var cooldown = function (thisArg, fn, timeout) {
     }
 }
 var clientsay = cooldown(client, client.say, 17000)
+
+var cooldown = function (thisArg, fn, timeout) {
+  var onCooldown = false;
+  return function (/* args */) {
+      if (!onCooldown) {
+          fn.apply(thisArg, arguments);
+          onCooldown = true;
+          setTimeout(function () {
+              onCooldown = false;
+          }, timeout);
+        }
+  }
+}
 var clientsay100 = cooldown(client, client.say, 100000)
+
+
+
+
+
+
+
+
+
+
 
 // sub check
 // let isSub = false;
