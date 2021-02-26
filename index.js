@@ -38,12 +38,12 @@ client.on("message", (channel, tags, message, user,) => {
     }
 
 		if (message.startsWith("!bot " + tags["display-name"] )){
-			clientsay('videoyun', "Niye kendine Faka Yu diyorsun? Sadge peepoHug " +tags["username"])
+			clientsay('videoyun', "Botumu kırmaya çalışma PepeMad @" +tags["username"])
 			return
 		}
 
 		if (message.startsWith("!bot @" + tags["display-name"] )){
-			clientsay('videoyun', "Niye kendine Faka Yu diyorsun? Sadge peepoHug " +tags["username"])
+			clientsay('videoyun', "Botumu kırmaya çalışma PepeMad  @" +tags["username"])
 			return
 		}
 
