@@ -29,7 +29,7 @@ const client = new tmi.Client({
 client.connect();
 
 client.on("message", (channel, tags, message, user,) => {
-  
+
 //bettertwitch
     if (message == "!bttv"){
       clientsay('videoyun', "@" + tags["username"] + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. ");
@@ -43,7 +43,6 @@ client.on("message", (channel, tags, message, user,) => {
     }
 
 //botlar
-
     if (message == "!bot") {
       clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
     return
@@ -97,8 +96,8 @@ client.on("message", (channel, tags, message, user,) => {
 
     if (message.startsWith("!bot @emir_canwp") || message.startsWith("!bot emir_canwp")) {
       fakayu = fakayu + 1
-  return
-  }
+     return
+    }
 
     if (message.startsWith("!bot karicigim") || message.startsWith("!bot @karicigim")) {
         clientsay('videoyun',  "lokiAim @" + tags["username"] + ` Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
@@ -132,7 +131,6 @@ client.on("message", (channel, tags, message, user,) => {
     }
 
 //sayaçlar
-
 		if (message.startsWith("monkaW")) {
 				monkaw = monkaw + 1
     return
@@ -198,7 +196,7 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
-		//ısmarlama pleb
+    //ısmarlama pleb
 		let isSub = false;
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
 		if (message.startsWith("!coffee @kocacigim")  || message.startsWith("!coffee @Kocacigim") || message.startsWith("!meat @kocacigim")  || 
@@ -212,7 +210,6 @@ client.on("message", (channel, tags, message, user,) => {
 		}
 
 //ısmarlama
-
 		if (message.startsWith("!coffee @kocacigim")  || message.startsWith("!coffee @Kocacigim")) {
         client.say('videoyun', ` peepoHappy :coffee: ` +tags["username"]+ " teşekkür ederim. peepoKiss");
     return
@@ -254,8 +251,7 @@ client.on("message", (channel, tags, message, user,) => {
     }
 
 
-//yetki
-
+//datalar
 		if (tags.username !== "kocacigim") return;
 			if (message.startsWith("!banafakayu"))
 			setTimeout(() => { client.say('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
@@ -287,7 +283,6 @@ client.on("message", (channel, tags, message, user,) => {
 }
 });
 
-
 //timeout
 var cooldown = function (thisArg, fn, timeout) {
     var onCooldown = false;
@@ -302,7 +297,3 @@ var cooldown = function (thisArg, fn, timeout) {
     }
 }
 var clientsay = cooldown(client, client.say, 17000)
-
-// sub check
-// let isSub = false;
-// if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
