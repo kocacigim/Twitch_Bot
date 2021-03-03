@@ -11,8 +11,8 @@ let sadge = 0
 let happy = 0
 let didsome = 0
 let wha = 0
-
-
+let kekw = 0
+let fivehead = 0
 
 const client = new tmi.Client({
 	options: { debug: true },
@@ -30,275 +30,97 @@ client.connect();
 
 client.on("message", (channel, tags, message, user,) => {
 
+
+  
+//bettertwitch
+    if (message == "!bttv"){
+      clientsay('videoyun', "@" + tags["username"] + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. ");
+    return
+    } 
+
+    if (message.startsWith("!bttv @")) {
+        var input = message.split(' ')[1];
+        setTimeout(() => { clientsay('videoyun', input+" Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol."); }, 1200);
+    return
+    }
+
 //botlar
 
     if (message == "!bot") {
-       	clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
+      clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
     return
     }
 
-		if (message.startsWith("!bot " + tags["display-name"] )){
-			clientsay('videoyun', "Botumu kırmaya çalışma PepeMad @" +tags["username"])
-			return
-		}
-
-		if (message.startsWith("!bot @" + tags["display-name"] )){
-			clientsay('videoyun', "Botumu kırmaya çalışma PepeMad  @" +tags["username"])
-			return
-		}
-
-    if (message == "!bttv"){
-      	clientsay('videoyun', "@" + tags["username"] + " Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol. ");
+    if (message.startsWith("!bot " + tags["display-name"]) || message.startsWith("!bot @" +"@"+ tags["display-name"])){
+     clientsay('videoyun', "Botumu kırmaya çalışmaz mısın lütfen peepoShy " + tags["username"])
     return
     }
 
-    if (message.startsWith("!bttv @")) {
-      var input = message.split(' ')[1];
-      setTimeout(() => { clientsay('videoyun', input+" Hangi tarayıcıyı kullandığının önemi yok, eğer bilgisayardaysan https://betterttv.com/ bu siteye gir ve eklentiyi kur ve mükemmel über süper güzel emoteleri sen de gör. Denemek istemez misin? Hemen tıkla, hemen insin, hemen mutlu ol."); }, 1200);
+    if (message.startsWith("!bot @chat") || message.startsWith("!bot chat") || message.startsWith("!bot @Chat") || message.startsWith("!bot Chat")) {
+      clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi  ");
+      fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot @chat")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi  ");
+    if (message.startsWith("!bot @tengigabit") || message.startsWith("!bot tengigabit") || message.startsWith("!bot @TenGigabit") || message.startsWith ("!bot TenGigabit")) {
+      clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
+      fakayu = fakayu + 1
+    return
+    }
+
+    if (message.startsWith("!bot @videoyun_bot") || message.startsWith("!bot videoyun_bot")) {
+        clientsay('videoyun', " Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS " + "@" + tags["username"]);
 				fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot @tengigabit")) {
-        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot tengigabit")) {
-        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot TenGigabit")) {
-        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @TenGigabit")) {
-        clientsay('videoyun', "@" + tags["username"] + " PepoG İnternet erişimi kesilecek.  ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot chat")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @Chat")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
-				fakayu = fakayu + 1
-    return
-    }
-
-
-    if (message.startsWith("!bot Chat")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: peepoKnife Chate ne dedi ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @videoyun_bot")) {
-        clientsay('videoyun', " Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS " + "@" + tags["username"] );
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot videoyun_bot")) {
-        clientsay('videoyun', `Bota niye Faka Yu diyorsun, Hacklesin mi seni? HACKERMANS ` + "@" + tags["username"] );
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @videoyun")) {
+    if (message.startsWith("!bot @videoyun") || message.startsWith("!bot videoyun") || message.startsWith("!bot @Videoyun") || message.startsWith("!bot Videoyun")) {
         clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
 				fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot videoyun")) {
-        clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
-				fakayu = fakayu + 1
-    return
-    }
+    if (message.startsWith("!bot @kocacigim") || message.startsWith("!bot kocacigim") || message.startsWith("!bot Kocacigim") || message.startsWith("!bot @Kocacigim")){
+      clientsay('videoyun', `PowerUpL PepeMad SirSword Salın lan artık beni ` + "@" + tags["username"]);
+      return
+      }
 
-    if (message.startsWith("!bot Videoyun")) {
-        clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @Videoyun")) {
-        clientsay('videoyun', "@" + tags["username"] + " peepoMad SirSword Loki'nin hizmetçisini sal ");
-				fakayu = fakayu + 1
-    return
-    }
-
-
-    if (message.startsWith("!bot Kocacigim")) {
-        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"] );
-				fakayu = fakayu + 1
-				sayi = sayi + 1
-    return
-    }
-
-    if (message.startsWith("!bot @Kocacigim")) {
-        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-	    sayi = sayi + 1
-    return
-    }
-
-    if (message.startsWith("!bot kocacigim")) {
-        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-	    sayi = sayi + 1
-    return
-    }
-
-    if (message.startsWith("!bot @kocacigim")) {
-        clientsay('videoyun', `Ya yeter peepoLife Faka Yu demeyin bana peepoH  ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-	    sayi = sayi + 1
-    return
-    }
-
-    if (message.startsWith("!bot @begmdy")) {
+    if (message.startsWith("!bot @begmdy") || message.startsWith("!bot begmdy") || message.startsWith("!bot BegMDY") || message.startsWith("!bot @BegMDY")){
         clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
 				fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot begmdy")) {
-        clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
+    if (message.startsWith("!bot @kronos_eaglepaw") || message.startsWith("!bot kronos_eaglepaw") || message.startsWith("!bot Kronos_EaglePaw") || message.startsWith("!bot @Kronos_EaglePaw")) {
+      clientsay('videoyun', `PowerUpL peepoMad SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
+      fakayu = fakayu + 1
+     return
+    }
+
+    if (message.startsWith("!bot @emir_canwp") || message.startsWith("!bot emir_canwp")) {
+      fakayu = fakayu + 1
+  return
+  }
+
+    if (message.startsWith("!bot karicigim") || message.startsWith("!bot @karicigim")) {
+        clientsay('videoyun',  "lokiAim @" + tags["username"] + ` Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
 				fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot BegMDY")) {
-        clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-    return
-    }
-
-   if (message.startsWith("!bot @BegMDY")) {
-        clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @kronos_eaglepaw")) {
-        clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot Kronos_EaglePaw")) {
-        clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @Kronos_EaglePaw")) {
-        clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot kronos_eaglepaw")) {
-        clientsay('videoyun', `PowerUpL ${randomemote} SirSword Öğrencime nasıl faka yu dersin lan sen ` + "@" + tags["username"]);
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot karicigim ")) {
-        clientsay('videoyun',  "lokiAim @" + tags["username"] + `Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @karicigim ")) {
-        clientsay('videoyun', "lokiAim @" + tags["username"] + `Sen kim oluyorsun da benim karıma faka yu diyorsun lan PowerUpL voyunRage PowerUpR` );
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot loki")) {
+    if (message.startsWith("!bot @loki") || message.startsWith("!bot loki") || message.startsWith("!bot Loki") || message.startsWith("!bot @Loki")) {
         clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
 				fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot @loki")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
+    if (message.startsWith("!bot suwsum") || message.startsWith("!bot @suwsum")) {
+        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: . PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
 				fakayu = fakayu + 1
     return
     }
 
-    if (message.startsWith("!bot @Loki")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot Loki")) {
-        clientsay('videoyun', "@" + tags["username"] + " D: Lokiyi sal yoksa Peta'yı arıyom aha FeelsSupportMan   ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot Suwsum")) {
-        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @Suwsum")) {
-        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot suwsum")) {
-        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @suwsum")) {
-        clientsay('videoyun', "@" + tags["username"] + " Polise küfür etmek mi D: PepoG evet silivriye tayin edilmişsiniz, Hayırlı Olsun. ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot ninsu")) {
-        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot Ninsu")) {
-        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @Ninsu")) {
-        clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
-				fakayu = fakayu + 1
-    return
-    }
-
-    if (message.startsWith("!bot @ninsu")) {
+    if (message.startsWith("!bot ninsu") || message.startsWith("!bot Ninsu") || message.startsWith("!bot @ninsu") || message.startsWith("!bot @Ninsu")) {
         clientsay('videoyun', "@" + tags["username"] + " Komşuyu sal PepeMad peepoKnife ");
 				fakayu = fakayu + 1
     return
@@ -363,186 +185,76 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
+    if (message.startsWith("D:")) {
+      wha = wha + 1
+    return
+    }
+
+    if (message.startsWith("KEKW")) {
+      kekw = kekw + 1
+    return
+    }
+    
+    if (message.startsWith("5Head")) {
+      fivehead = fivehead + 1
+    return
+    }
+
 		//ısmarlama pleb
 		let isSub = false;
 		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!coffee @Kocacigim")) {
+		if (message.startsWith("!coffee @kocacigim")  || message.startsWith("!coffee @Kocacigim") || message.startsWith("!meat @kocacigim")  || 
+    message.startsWith("!meat @Kocacigim") || message.startsWith("!salad @kocacigim")  || message.startsWith("!salad @Kocacigim") || 
+    message.startsWith("!pizza @kocacigim")  || message.startsWith("!pizza @Kocacigim") || message.startsWith("!popcorn @kocacigim")  || 
+    message.startsWith("!popcorn @Kocacigim") || message.startsWith("!juice @kocacigim")  || message.startsWith("!juice @Kocacigim") || 
+    message.startsWith("!burrito @kocacigim")  || message.startsWith("!burrito @Kocacigim")  || message.startsWith("!pie @kocacigim")  ||
+    message.startsWith("!pie @Kocacigim")) {
     if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!coffee @kocacigim")) {
-    if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-  	if (message.startsWith("!meat @Kocacigim")) {
-    if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!meat @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!salad @Kocacigim")) {
-    if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!salad @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!pizza @Kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!pizza @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!popcorn @Kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!popcorn @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!juice @Kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!juice @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!burrito @Kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!burrito @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!pie @Kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
-		}
-
-		if (tags.badges) isSub = 'subscriber' in tags.badges || 'founder' in tags.badges;
-		if (message.startsWith("!pie @kocacigim")) {
-		if (!isSub)
-				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags.username);
+				client.say('videoyun', "Bana bunu ısmarlamak yerine sub olmaya ne dersin? FeelsOkayMan " + tags["username"]);
 		}
 
 //ısmarlama
 
-		if (message.startsWith("!coffee @Kocacigim")) {
+		if (message.startsWith("!coffee @kocacigim")  || message.startsWith("!coffee @Kocacigim")) {
         client.say('videoyun', ` peepoHappy :coffee: ` +tags["username"]+ " teşekkür ederim. peepoKiss");
     return
     }
 
-		if (message.startsWith("!coffee @kocacigim")) {
-        client.say('videoyun', ` peepoHappy :coffee: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!meat @Kocacigim")) {
+    if (message.startsWith("!meat @kocacigim") || message.startsWith("!meat @Kocacigim")) {
         client.say('videoyun',` peepoHappy :meat_on_bone: ` +tags["username"]+ " teşekkür ederim. peepoKiss");
     return
     }
 
-		if (message.startsWith("!meat @kocacigim")) {
-        client.say('videoyun', ` peepoHappy :meat_on_bone: ` +tags["username"]+ " teşekkür ederim. peepoKiss " );
-    return
-    }
-
-    if (message.startsWith("!salad @Kocacigim")) {
+    if (message.startsWith("!salad @kocacigim") || message.startsWith("!salad @Kocacigim")) {
         client.say('videoyun',` peepoHappy :green_salad: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-		if (message.startsWith("!salad @kocacigim")) {
-        client.say('videoyun',` peepoHappy :green_salad: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!pizza @Kocacigim")) {
+    if (message.startsWith("!pizza @kocacigim") || message.startsWith("!pizza @Kocacigim")) {
         client.say('videoyun', ` peepoHappy :pizza: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-		if (message.startsWith("!pizza @kocacigim")) {
-        client.say('videoyun',"peepoHappy :pizza:" +tags["username"]+ " teşekkür ederim. peepoKiss " );
-    return
-    }
-
-    if (message.startsWith("!popcorn @Kocacigim")) {
+    if (message.startsWith("!popcorn @kocacigim")  || message.startsWith("!popcorn @Kocacigim")) {
         client.say('videoyun', ` peepoHappy nymnCorn ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-		if (message.startsWith("!popcorn @kocacigim")) {
-        client.say('videoyun'," peepoHappy nymnCorn "+tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-
-    if (message.startsWith("!juice @Kocacigim")) {
+    if (message.startsWith("!juice @kocacigim")  || message.startsWith("!juice @Kocacigim")) {
         client.say('videoyun', ` voyunSip ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-		if (message.startsWith("!juice @kocacigim")) {
-        client.say('videoyun',"voyunSip " +tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!burrito @Kocacigim")) {
+    if (message.startsWith("!burrito @kocacigim") || message.startsWith("!burrito @Kocacigim")) {
         client.say('videoyun',` peepoHappy :burrito: `+tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-		if (message.startsWith("!burrito @kocacigim")) {
-        client.say('videoyun'," peepoHappy :burrito: "+tags["username"]+ " teşekkür ederim. peepoKiss ");
-    return
-    }
-
-    if (message.startsWith("!pie @Kocacigim")) {
+    if (message.startsWith("!pie @kocacigim") || message.startsWith("!pie @Kocacigim")) {
         client.say('videoyun', ` peepoHappy :pie: ` +tags["username"]+ " teşekkür ederim. peepoKiss ");
     return
     }
 
-		if (message.startsWith("!pie @kocacigim")) {
-        client.say('videoyun'," peepoHappy :pie:" +tags["username"]+ " teşekkür ederim. peepoKiss");
-    return
-    }
 
 //yetki
 
@@ -592,30 +304,6 @@ var cooldown = function (thisArg, fn, timeout) {
     }
 }
 var clientsay = cooldown(client, client.say, 17000)
-
-var cooldown = function (thisArg, fn, timeout) {
-  var onCooldown = false;
-  return function (/* args */) {
-      if (!onCooldown) {
-          fn.apply(thisArg, arguments);
-          onCooldown = true;
-          setTimeout(function () {
-              onCooldown = false;
-          }, timeout);
-        }
-  }
-}
-var clientsay100 = cooldown(client, client.say, 100000)
-
-
-
-
-
-
-
-
-
-
 
 // sub check
 // let isSub = false;
