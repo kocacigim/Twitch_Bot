@@ -29,8 +29,6 @@ const client = new tmi.Client({
 client.connect();
 
 client.on("message", (channel, tags, message, user,) => {
-
-
   
 //bettertwitch
     if (message == "!bttv"){
