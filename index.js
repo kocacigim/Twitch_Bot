@@ -13,6 +13,7 @@ let didsome = 0
 let wha = 0
 let kekw = 0
 let fivehead = 0
+let botfakayu = 0
 
 const client = new tmi.Client({
 	options: { debug: true },
@@ -45,11 +46,13 @@ client.on("message", (channel, tags, message, user,) => {
 //botlar
     if (message == "!bot") {
       clientsay('videoyun', "@" + tags["username"] + " Niye kendine Faka Yu diyorsun? Sadge peepoHug ");
+      fakayu = fakayu + 1
     return
     }
 
     if (message.startsWith("!bot " + tags["display-name"]) || message.startsWith("!bot @" +"@"+ tags["display-name"])){
      clientsay('videoyun', "Botumu kırmaya çalışmaz mısın lütfen peepoShy " + tags["username"])
+     fakayu = fakayu + 1
     return
     }
 
@@ -79,8 +82,10 @@ client.on("message", (channel, tags, message, user,) => {
 
     if (message.startsWith("!bot @kocacigim") || message.startsWith("!bot kocacigim") || message.startsWith("!bot Kocacigim") || message.startsWith("!bot @Kocacigim")){
       clientsay('videoyun', `PowerUpL PepeMad SirSword Salın lan artık beni ` + "@" + tags["username"]);
-      return
-      }
+      fakayu = fakayu + 1 
+      sayi = sayi + 1
+    return 
+    }
 
     if (message.startsWith("!bot @begmdy") || message.startsWith("!bot begmdy") || message.startsWith("!bot BegMDY") || message.startsWith("!bot @BegMDY")){
         clientsay('videoyun', `Şefi sal PepeMad peepoKnife ` + "@" + tags["username"]);
@@ -127,72 +132,6 @@ client.on("message", (channel, tags, message, user,) => {
 		const randomemote = randomemotes();
 		    clientsay('videoyun', `PowerUpL ${randomemote} SirSword İnsanlara Faka Yu deme! ` + "@" + tags["username"]);
 				fakayu = fakayu + 1
-    return
-    }
-
-//sayaçlar
-		if (message.startsWith("monkaW")) {
-				monkaw = monkaw + 1
-    return
-    }
-
-		if (message.startsWith("monkaS")) {
-				monkas = monkas + 1
-    return
-    }
-
-		if (message.startsWith("monkaX")) {
-				monkax = monkax + 1
-    return
-    }
-
-		if (message.startsWith("peepoS")) {
-				peepos = peepos + 1
-    return
-    }
-
-		if (message.startsWith("YEP cock")) {
-				cock = cock + 1
-    return
-    }
-
-		if (message.startsWith("YEP Cock")) {
-				cock = cock + 1
-    return
-    }
-
-		if (message.startsWith("YEP COCK")) {
-				cock = cock + 1
-    return
-    }
-
-		if (message.startsWith("Sadge")) {
-				sadge = sadge + 1
-    return
-    }
-
-		if (message.startsWith("peepoHappy")) {
-				happy = happy + 1
-    return
-    }
-
-		if (message.startsWith("DIDSOMEONESAYCOCK")) {
-				didsome = didsome + 1
-    return
-    }
-
-    if (message.startsWith("D:")) {
-      wha = wha + 1
-    return
-    }
-
-    if (message.startsWith("KEKW")) {
-      kekw = kekw + 1
-    return
-    }
-    
-    if (message.startsWith("5Head")) {
-      fivehead = fivehead + 1
     return
     }
 
@@ -250,15 +189,90 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
+    //sayaçlar
+    if (message.startsWith("monkaW")) {
+      monkaw = monkaw + 1
+    return
+    }
+
+    if (message.startsWith("monkaS")) {
+       monkas = monkas + 1
+    return
+    }
+
+    if (message.startsWith("monkaX")) {
+      monkax = monkax + 1
+    return
+    }
+
+    if (message.startsWith("peepoS")) {
+      peepos = peepos + 1
+    return
+    }
+
+    if (message.startsWith("YEP cock")) {
+      cock = cock + 1
+    return
+    }
+
+    if (message.startsWith("YEP Cock")) {
+      cock = cock + 1
+    return
+    }
+
+    if (message.startsWith("YEP COCK")) {
+      cock = cock + 1
+    return
+    }
+
+    if (message.startsWith("Sadge")) {
+     sadge = sadge + 1
+    return
+    }
+
+    if (message.startsWith("peepoHappy")) {
+      happy = happy + 1
+    return
+    }
+
+    if (message.startsWith("DIDSOMEONESAYCOCK")) {
+      didsome = didsome + 1
+    return
+    }
+
+    if (message.startsWith("D:")) {
+      wha = wha + 1
+    return
+    }
+
+    if (message.startsWith("KEKW")) {
+      kekw = kekw + 1
+    return
+    }
+
+    if (message.startsWith("5Head")) {
+      fivehead = fivehead + 1
+    return
+    }
+
+    if (tags.username === "videoyun_bot") return;
+    if (message.startsWith("Faka Yu ")) {
+      botfakayu = botfakayu + 1
+    return
+    }
 
 //datalar
 		if (tags.username !== "kocacigim") return;
 			if (message.startsWith("!banafakayu"))
-			setTimeout(() => { client.say('videoyun', "Toplam " +sayi+ " kere Faka Yu dediler bana. peepoH "); }, 1200);
+			setTimeout(() => { client.say('videoyun', "Toplam kere Faka Yu dediler bana. peepoH "); }, 1200);
 
 			else if (message.startsWith("!datalar"))
-			setTimeout(() => { client.say('videoyun', "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Toplam " +fakayu+ " kere Faka Yu dedirtmişsiniz. PepoG " + " monkaW sayacı: " +monkaw + " monkaS sayacı: " +monkas+ "  monkaX sayacı: " +monkax+ "  ⠀⠀ peepoS sayacı: " +peepos+ " Sadge sayacı: " +sadge+ " peepoHappy sayacı: " +happy+"⠀ DIDSOMEONESAYCOCK sayacı: " +didsome+ " YEP Cock sayacı: " +cock ); }, 1200);
-
+			setTimeout(() => { client.say('videoyun',
+      " ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  KEKW sayacı: " + kekw + "⠀ DIDSOMEONESAYCOCK sayacı: " + didsome + " YEP Cock sayacı: " + cock  +
+      " monkaW sayacı: " + monkaw + " monkaS sayacı: " + monkas + "  monkaX sayacı: " + monkax + " peepoS sayacı: " + peepos + 
+      " Sadge sayacı: " + sadge + "⠀⠀⠀⠀⠀ peepoHappy sayacı: " + happy + " D: sayacı: " + wha +" 5Head sayacı: " + fivehead + 
+      " Toplam " + fakayu + " kere Faka Yu demeye çalışmışsınız ama bot " + botfakayu + " kere faka yu demiş ve  bunların " + sayi +  
+      " bu kadarı bana ayıp lan. Sadge"  ); }, 1200);
 
 		function randomemotes() {
 		const sides = 4;
