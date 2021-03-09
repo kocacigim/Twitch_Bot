@@ -50,7 +50,7 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
-    if (message.startsWith("!bot " + tags["display-name"]) || message.startsWith("!bot @" +"@"+ tags["display-name"])){
+    if (message.startsWith("!bot " + tags["display-name"]) || message.startsWith("!bot @" + "@" + tags["display-name"])){
      clientsay('videoyun', "Botumu kırmaya çalışmaz mısın lütfen peepoShy " + tags["username"])
      fakayu = fakayu + 1
     return
@@ -255,8 +255,7 @@ client.on("message", (channel, tags, message, user,) => {
     return
     }
 
-    if (tags.username === "videoyun_bot") return;
-    if (message.startsWith("Faka Yu ")) {
+    if (message.startsWith("Faka Yu")) {
       botfakayu = botfakayu + 1
     return
     }
@@ -268,11 +267,10 @@ client.on("message", (channel, tags, message, user,) => {
 
 			else if (message.startsWith("!datalar"))
 			setTimeout(() => { client.say('videoyun',
-      " ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  KEKW sayacı: " + kekw + "⠀ DIDSOMEONESAYCOCK sayacı: " + didsome + " YEP Cock sayacı: " + cock  +
-      " monkaW sayacı: " + monkaw + " monkaS sayacı: " + monkas + "  monkaX sayacı: " + monkax + " peepoS sayacı: " + peepos + 
-      " Sadge sayacı: " + sadge + "⠀⠀⠀⠀⠀ peepoHappy sayacı: " + happy + " D: sayacı: " + wha +" 5Head sayacı: " + fivehead + 
-      " Toplam " + fakayu + " kere Faka Yu demeye çalışmışsınız ama bot " + botfakayu + " kere faka yu demiş ve  bunların " + sayi +  
-      " bu kadarı bana ayıp lan. Sadge"  ); }, 1200);
+      " ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  KEKW sayacı: " + kekw + " DIDSOMEONESAYCOCK sayacı: " + didsome + " YEP Cock sayacı: " + cock  +
+      " monkaW sayacı: " + monkaw + " monkaS sayacı: " + monkas + "⠀  monkaX sayacı: " + monkax + " peepoS sayacı: " + peepos + 
+      " Sadge sayacı: " + sadge + " peepoHappy sayacı: " + happy + "⠀⠀  D: sayacı: " + wha +" 5Head sayacı: " + fivehead + " ⠀⠀  ⠀⠀⠀  ⠀⠀  ⠀    Toplam " + fakayu + " kere Faka Yu demeye çalışmışsınız ama bot " + botfakayu + " kere faka yu demiş ve  bunların " 
+      + sayi + " bu kadarı bana ayıp lan. Sadge"  ); }, 1200);
 
 		function randomemotes() {
 		const sides = 4;
